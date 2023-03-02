@@ -1,0 +1,17 @@
+<form [formGroup]="form" (ngSubmit)="submitForm()">
+  <div>
+    <label for="username">Username:</label>
+    <input type="text" id="username" formControlName="username">
+    <div *ngIf="form.get('username')?.invalid && form.get('username')?.touched">
+      Username is required.
+    </div>
+  </div>
+  <div>
+    <label for="password">Password:</label>
+    <input type="password" id="password" formControlName="password">
+    <div *ngIf="form.get('password')?.invalid && form.get('password')?.touched">
+      Password is required.
+    </div>
+  </div>
+  <button type="submit" [disabled]="form.invalid">Login</button>
+</form>

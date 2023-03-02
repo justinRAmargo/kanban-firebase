@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "kanban-fire-79b77": {
+      "hosting": {
+        "sample": [
+          "kanban-fire-79b77"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "kanban-fire-79b77"
+  }
+}
